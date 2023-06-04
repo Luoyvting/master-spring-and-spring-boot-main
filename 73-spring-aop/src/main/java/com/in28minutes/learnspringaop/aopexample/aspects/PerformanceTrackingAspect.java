@@ -27,8 +27,7 @@ public class PerformanceTrackingAspect {
 
 		long executionDuration = stopTimeMillis - startTimeMillis;
 
-		logger.info("Around Aspect - {} Method executed in {} ms"
-				,proceedingJoinPoint, executionDuration);
+        logger.info("Around Aspect - {} Method executed in {} ms", proceedingJoinPoint, executionDuration);
 
 		return returnValue;
 	}
